@@ -19,6 +19,7 @@ export class TopbarComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.lang = localStorage.getItem("lang") ?? 'EN';
   }
 
   goToProjects() {
@@ -29,4 +30,12 @@ export class TopbarComponent implements OnInit {
       this.router.navigate(['/proyectos']);
     }
   }
+
+  changeLang(selectedLang: any) {
+    localStorage.setItem("lang", selectedLang);
+    window.location.reload();
+  }
+
+  public lang: string
+
 }

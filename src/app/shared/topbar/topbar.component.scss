@@ -22,3 +22,12 @@
 .link:hover {
     color: rgb(224, 224, 224);
 }
+
+.select select {
+    background-color: #00000000;
+    border: 0;
+}
+
+.select option {
+    color: black
+}

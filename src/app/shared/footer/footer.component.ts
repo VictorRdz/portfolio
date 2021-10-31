@@ -12,14 +12,19 @@ export class FooterComponent implements OnInit {
   constructor(private cookieService: CookieService, private translateService: TranslateService) { }
 
   ngOnInit(): void {
-    let defaultLang = this.cookieService.get('defaultLang');
     // Check if local language is already set
     if(localStorage.getItem("lang") == undefined) {
-      localStorage.setItem("lang", defaultLang || "en");
+      // Get default language
+      let userLang = navigator.language;
+      userLang = userLang[0] + userLang[1]
+      if(userLang !== 'es') {
+        userLang = 'en'
+      }
+      localStorage.setItem("lang", userLang ?? "en");
     }
 
     this.lang = localStorage.getItem("lang");
-    this.translateService.use(this.lang || "en");
+    this.translateService.use(this.lang ?? "en");
     this.year = new Date(Date.now()).getFullYear();
   }
 
