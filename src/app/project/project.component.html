@@ -1,0 +1,50 @@
+<div class='section is-small' #projectItem>
+    <div class='container is-fullhd'>
+        <div class='columns is-desktop'>
+            <div class='column is-8-desktop'>
+                <div style='border:1px solid whitesmoke'>
+                    <img src="assets/proyectos/{{ proyecto?.folder }}/banner-min.png" *ngIf="proyecto">
+                    <div class='box is-shadowless'>
+                        <div class='columns is-desktop is-vcentered'>
+                            <div class='column is-9'>
+                                <h1 class="is-size-3 mb-4">{{ proyecto?.titulo }}</h1>
+                                <div class="tags-container">
+                                    <app-tag *ngFor="let tag of proyecto?.tags" [text]="tag"></app-tag>
+                                </div>
+                            </div>
+                            <div class='column is-3'>
+                                <a href="{{proyecto?.github}}" class="button is-medium is-dark is-fullwidth" target="_blank" *ngIf="proyecto?.github"><i class="fab fa-github"></i> {{ 'ver-github' | translate }}</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class='is-size-5'>{{ proyecto?.descripcion }}</p>
+                        <br>
+                        <div [innerHtml]="proyecto?.contenido" class="is-size-5 html-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class='column is-4-desktop is-hidden-touch'>
+                <div class="sticky-right-container" style='border: 1px solid whitesmoke'>
+                    <img src="assets/proyectos/{{ proyecto?.folder }}/banner-min.png" *ngIf="proyecto">
+                    <div class='box is-shadowless'>
+                        <h5 class='is-size-4 mb-3'>{{ proyecto?.titulo }}</h5>
+                        <div class="tags-container mb-4">
+                            <app-tag *ngFor="let tag of proyecto?.tags" [text]="tag"></app-tag>
+                        </div>
+                        <p>{{ proyecto?.descripcion }}</p>
+                        <hr>
+                        <a href="{{proyecto?.github}}" class="button is-fullwidth is-dark is-medium" style="margin-bottom:0;" target="_blank" *ngIf="proyecto?.github"><i class="fab fa-github"></i> {{ 'ver-github' | translate }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='columns has-text-centered mt-4 mb-4'>
+            <div class='column is-6'>
+                <a routerLink="/proyectos" class="button is-medium">{{ 'volver-proyectos' | translate }}</a>
+            </div>
+            <div class='column is-6'>
+                <a class="button is-medium" (click)="goToTop();">{{ 'ir-arriba' | translate }}</a>
+            </div>
+        </div>
+    </div>
+</div>

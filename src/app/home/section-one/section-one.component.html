@@ -1,0 +1,21 @@
+<div class='section is-medium'>
+    <div class='container is-fullhd'>
+        <div class='columns is-desktop is-centered is-vcentered'>
+            <div class='column is-4-desktop'>
+                <img class="face-image" src="assets/images/face.png">
+            </div>
+            <div class='column is-5-desktop'>
+                <h1 class="is-size-1 has-text-weight-bold">Víctor González</h1>
+                <h2 class='is-size-3'>{{ 'titulo' | translate }}</h2>
+                <div class='columns mt-4'>
+                    <div class='column is-8'>
+                        <a class="button is-primary is-large is-fullwidth" (click)="scrollService.scrollToProjects();">{{ 'proyectos' | translate }}</a>
+                    </div>
+                    <div class='column is-4'>
+                        <a class="button is-large is-fullwidth" (click)="contactService.openModal();">{{ 'contacto' | translate }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

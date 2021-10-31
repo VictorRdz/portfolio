@@ -1,0 +1,31 @@
+<div class='hero topbar-container has-text-white'>
+    <div class='is-flex is-align-items-center' style='height:100%;'>
+        <div class='container is-fullhd pl-4 pr-4'>
+            <div class='columns is-mobile'>
+                <div class='column is-3-desktop is-6-touch is-flex is-align-items-center'>
+                    <a class="navegation-logo" routerLink="/inicio">
+                        <span class="is-size-3 is-size-4-mobile has-text-weight-bold link logo-text">Víctor González</span>
+                    </a>
+                </div>
+                <div class='column is-9-desktop is-6-touch has-text-right'>
+                    <div class='columns is-mobile'>
+                        <div class='column is-3-desktop is-hidden-touch'></div>
+                        <div class='column is-3-desktop is-hidden-touch'></div>
+
+                        <div class='column is-3-desktop is-full-touch'>
+                            <div class='is-flex is-align-items-center is-justify-content-center'>
+                                <a class='button is-ghost is-size-5 link is-hidden-touch  is-fullwidth' (click)="contactService.openModal()">{{ 'contacto' | translate }}</a>
+                                <a class='button is-primary is-size-5 link is-hidden-desktop is-fullwidth' (click)="contactService.openModal()">{{ 'contacto' | translate }}</a>
+                            </div>
+                        </div>
+                        <div class='column is-3-desktop is-hidden-touch'>
+                            <div class='is-flex is-align-items-center is-justify-content-center'>
+                                <a class='button is-medium is-size-5 is-fullwidth is-primary' (click)="goToProjects();">{{ 'proyectos' | translate }}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<a [routerLink]="'/' + proyecto.contenidoId" class="link">
+    <div style='border:1px solid whitesmoke'>
+        <img class="image block" src="assets/proyectos/{{ proyecto?.folder }}/banner-min.png">
+        <div class="box is-shadowless" style='padding-top:0;'>
+            <h2 class="is-size-4 has-text-weight-bold block">{{ proyecto.titulo }}</h2>
+            <p class="description block">{{ proyecto.descripcion }}</p>
+            <div class="tags block pt-5">
+                <app-tag *ngFor="let tag of proyecto.tags" [text]="tag"></app-tag>
+             </div>
+        </div>
+    </div>
+</a>

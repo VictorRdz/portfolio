@@ -1,0 +1,22 @@
+<div class="modal" [ngClass]='{ "is-active": isModelOpen }'>
+  <div class="modal-background" (click)='contactService.closeModal()' ></div>
+  <div class="modal-content">
+    <div class="big-section box is-shadowless">
+      <h2 class="is-size-3">Github</h2>
+      <a href='https://github.com/victorrdz' target="_blank">https://github.com/victorrdz</a>
+      <h2 class="is-size-3 mt-3">Linkedin</h2>
+      <a href='https://www.linkedin.com/in/victorrdz/' target="_blank">https://www.linkedin.com/in/victorrdz</a>
+
+      <h2 class="is-size-3 mt-3">Email</h2>
+      <small>{{ 'recaptcha' | translate }}</small>
+      <div class="centered captcha">
+        <button class='button mt-3' (click)='showEmail()'>View email</button>
+      </div>
+      <div [style.display]="display" class="mt-3">
+          <input class="input" type="text" value="{{ email }}" #emailInput readonly>
+          <button class="button is-primary" (click)='copy()'><i class="fa fa-clone" aria-hidden="true"></i> {{ 'copiar' | translate }}</button>
+      </div>
+    </div>
+  </div>
+  <button class="modal-close is-large" (click)='contactService.closeModal()' aria-label="close"></button>
+</div>

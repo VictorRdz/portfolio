@@ -1,0 +1,32 @@
+@import 'variables';
+
+.not-found {
+    text-align: center;
+    color: $dark-color;
+}
+
+.main {
+    font-size: 120px;
+    margin: 0
+}
+
+.secondary {
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.button {
+    color: $dark-color;
+    background-color: $light-color;
+    text-align: center;
+    transition: 0.2s;
+    padding: 10px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: $light-color-hover;
+    transition: 0.2s;
+}

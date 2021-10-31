@@ -1,0 +1,11 @@
+<div class='container is-fullhd'>
+    <div class="section is-small">
+        <h1 class="is-size-2 has-text-centered has-text-weight-bold pb-3 mb-6">{{ 'proyectos-title' | translate }}</h1>
+        
+        <div class="columns is-multiline">
+            <ng-container *ngFor="let proyecto of proyectos">
+                <app-item class="column is-4-desktop is-6-tablet" [proyecto]="proyecto"></app-item>
+            </ng-container>
+        </div>
+    </div>
+</div>

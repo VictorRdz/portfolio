@@ -1,0 +1,22 @@
+<div class="hero section is-medium footer-container has-text-white">
+    <div>
+        <div class='container is-fullhd'>
+            <div class='columns'>
+                <div class='column is-4'>
+                    <span class='is-size-5'>Select your language:</span>
+                    <div class='select is-fullwidth is-medium mt-3'>
+                        <select (change)="changeLang($event.target.value)">
+                            <option value="es" [selected]="lang == 'es'">Español</option>
+                            <option value="en" [selected]="lang == 'en'">English</option>
+                        </select>
+                    </div>
+                </div>
+                <div class='column is-8 has-text-centered'>
+                    <hr class='is-hidden-desktop'>
+                    <span class="is-size-4 mb-3 has-text-weight-bold">&copy;  {{ year }} - Víctor Miguel González Rodríguez</span><br>
+                    <span class='is-size-6'>{{ 'footer' | translate }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
