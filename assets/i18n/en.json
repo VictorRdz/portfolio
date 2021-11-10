@@ -1,14 +1,17 @@
 {
-    "titulo": "Systems Administrator Engineer",
-    "proyectos": "Projects",
-    "proyectos-title": "Take a look at my projects",
+    "titulo": "Software Engineer",
+    "acerca-de": "Developer of reliable and usable software, passionate about new technologies, with more than nine software projects developed in multiple teams, convinced of digital transformation.",
+    "proyectos": "View projects",
+    "proyectos-title": "These are my projects",
     "contacto": "Contact me",
-    "recaptcha": "Complete the reCAPTCHA to view the email address",
     "copiar": "copy",
     "ir-arriba": "Back to top",
     "volver-proyectos": "Go to projects menu",
     "ver-github": "View on GitHub",
+    "ver-website": "Go to website",
     "footer": "Developed in Angular, with Bulma",
     "no-disponible": "This page is not available",
-    "ir-inicio": "Go to home"
+    "ir-inicio": "Go to home",
+    "bienvenida": "Hello, I'm",
+    "ver-email": "Click to view email"
 }

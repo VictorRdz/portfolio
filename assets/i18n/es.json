@@ -1,14 +1,18 @@
 {
-    "titulo": "Ingeniero Administrador de Sistemas",
-    "proyectos": "Proyectos",
-    "proyectos-title": "Echa un vistazo a mis proyectos",
+    "titulo": "Ingeniero de Software",
+    "acerca-de": "Desarrollador de software fiable y usable, apasionado de las nuevas tecnologías, con más de nueve proyectos de software desarrollados en múltiples equipos, convencido de la transformación digital.",
+    "proyectos": "Ver proyectos",
+    "proyectos-title": "Estos son mis proyectos",
     "contacto": "Contacto",
     "recaptcha": "Complete el reCAPTCHA para ver la direccion de correo",
     "copiar": "copiar",
     "ir-arriba": "Ir arriba",
     "volver-proyectos": "Ir al menú de proyectos",
     "ver-github": "Ver en GitHub",
+    "ver-website": "Ir al sitio",
     "footer": "Desarrollado en Angular, con Bulma",
     "no-disponible": "La página no está disponible",
-    "ir-inicio": "Ir a inicio"
+    "ir-inicio": "Ir a inicio",
+    "bienvenida": "Hola, soy",
+    "ver-email": "Clic para ver el email"
 }
